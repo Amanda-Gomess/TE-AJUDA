@@ -1,0 +1,348 @@
+
+body
+{
+  background-color: white;
+  
+}
+
+.alt
+{
+  transition: transform 1s;
+  transform: translateX(0) scale(1);
+  color: black;
+}
+
+.alt:hover
+{
+  transform: scale(1.3);
+  color: black;
+}
+
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+.banner
+{
+  width:100%;
+  height:27%;
+  margin: 0 auto;
+  display: block;
+  background-color:	#fdf5df;
+  
+}
+
+#container{
+  padding:20%;
+  text-align: center;
+  display: inline-block;
+  
+}
+#conteudo{
+  font-style: oblique;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+#pagina{
+  text-align: justify;
+  font-style: normal;
+}
+h2{
+  text-align: center;
+}
+
+#sobre{
+  text-align:center;
+  font-style: oblique;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#feed{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+}
+
+\\Formatação dos cards\\
+.row
+{
+  flex-wrap:wrap;
+  margin-right:-1.5rem;
+  margin-left:-1.5rem;
+  padding: 20%;
+  display: flex;
+}
+.card
+{
+  display: flex;
+  text-align: center;
+
+}
+
+#efeito{
+  transition: all 0.5s;
+    cursor: pointer;
+}
+
+#efeito:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+\\Formatação da estrela\\
+
+.page-section
+{
+  padding:6rem 0
+}
+.page-section .page-section-heading
+{
+  font-size:2.25rem;
+  line-height:2rem
+}
+
+.divider-custom
+{
+  margin:1.25rem 0 1.5rem;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center
+}
+
+.divider-custom .divider-custom-line
+{
+  width:100%;
+  max-width:7rem;
+  height:.25rem;
+  background-color:black;
+  border-radius:1rem;
+  border-color:black;
+}
+
+.divider-custom .divider-custom-line:first-child
+{
+  margin-right:1rem;
+}
+.divider-custom .divider-custom-line:last-child
+{
+  margin-left:1rem;
+}
+
+.divider-custom .divider-custom-icon
+{
+  color:black!important;
+  font-size:2rem
+}
+.divider-custom.divider-light .divider-custom-line
+{
+  background-color:#fff
+}
+.divider-custom.divider-light .divider-custom-icon
+{
+  color:#fff!important
+}
+\\programação da segunda página\\
+.modal-dialog-scrollable .modal-content
+{
+  max-height:calc(100vh - 1rem);
+  overflow:hidden;
+}
+.modal-dialog-centered.modal-dialog-scrollable .modal-content
+{
+  max-height:none
+}
+.modal-content
+{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  pointer-events:auto;
+  background-color:#fff;
+  background-clip:padding-box;
+  border:0 solid rgba(0,0,0,.2);
+  border-radius:.75rem;
+  outline:0
+}
+.container
+{width:100%;
+  padding-right:1.5rem;
+  padding-left:1.5rem;
+  margin-right:auto;
+  margin-left:auto}
+  
+\\programação do botão para fechar segunda página\\
+
+.close{
+  float:right;
+  font-size:1.5rem;
+  font-weight:700;
+  line-height:1;
+  color:#000;
+  text-shadow:0 1px 0 #fff;
+  opacity:.5}
+.close:hover
+{
+  color:#000;
+  text-decoration:none
+}
+.close:not(:disabled):not(.disabled):focus,.close:not(:disabled):not(.disabled):hover
+{
+  opacity:.75
+}
+button.close
+{
+  padding:0;
+  background-color:transparent;
+  border:0;
+  -webkit-appearance:none;
+  -moz-appearance:none;appearance:none
+}
+.modal-header .close
+{
+  padding:1rem;
+  margin:-1rem -1rem -1rem auto
+}
+.portfolio-modal .close
+{
+  position:absolute;
+  z-index:1;
+  right:1.5rem;
+  top:1rem;
+  font-size:3rem;
+  line-height:3rem;
+  color:black;
+  opacity:1
+}
+.alert-dismissible .close
+{
+  position:absolute;
+  top:0;
+  right:0;
+  padding:.75rem 1.25rem;
+  color:inherit;
+  
+}
+\\formatação do feedback\\
+.forms{
+  text-align: center;
+  width: 30%;
+  padding: 30%;
+  display:fixed;
+ 
+ }
+.content{
+  display: flex;
+  justify-content: center;
+}
+.contato{
+  width: 30%;
+  text-align: center;
+  max-width: 500px;
+
+}
+.feedback{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.field{
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:16px;
+}
+.textarea{
+  height: 150px;
+
+}
+
+/* card 3d efeito hover flip */
+
+
+.middle{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.card2{
+  cursor: pointer;
+  width: 300px;
+  height:500px;
+  margin: 10px;
+  
+}
+
+.front, .back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+
+.front img-card2{
+  height: 100%;
+}
+
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.back{
+  background: #c5aded;
+  transform: perspective(600px) rotateY(180deg);
+
+}
+.back-content{
+  color:white;
+  text-align: center;
+  width: 100%;
+}
+
+.card2:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card2:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+/* botao doc */
+
+a:link{
+    text-decoration: none;
+}
+
+.btn {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #82589F;
+    border-radius: 0.6em;
+    color: #82589F;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    
+  }
+  .btn:hover {
+    color: #fff;
+    outline: 0;
+  }
+
