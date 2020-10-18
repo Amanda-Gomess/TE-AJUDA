@@ -23,15 +23,16 @@ Te Ajuda
 
   <!--Custom styles-->
   <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="shortcut icon" href="../TEAJUDA/img/logo-mobile.png"/>
 </head>
 <body>
 
   <!-- Navigation -->
   <div class="banner" data-target="#navbarResponsive" aria-controls="navbarResponsive"aria-expanded="false"
    aria-label="Toggle navigation">
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container">
-        <img src="img/ioga2-3.png" class="img-fluid mb-5" alt="Responsive image">
+        <img src="../TEAJUDA/img/logo-mobile.png" class="img-fluid mb-5" alt="Responsive image">
       <a class="alt"><b>TE AJUDA</b></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,27 +41,25 @@ Te Ajuda
         <ul class="navbar-nav ml-auto">
             <li class="nav-item pr-3">
                 <a class="alt" href="#home">HOME</a>
-              </li>
-          <li class="nav-item pr-3">
-            <a class="alt" href="#conteudo">CONTEÚDO</a>
-          </li>
-          <li class="nav-item pr-3">
-            <a class="alt" href="#sobre">SOBRE</a>
-          </li>
-          <li class="nav-item pr-3">
-            <a class="alt" href="#feed">FEEDBACK</a>
-          </li>
-         
-
+            </li>
+            <li class="nav-item pr-3">
+              <a class="alt" href="#conteudo">CONTEÚDO</a>
+            </li>
+            <li class="nav-item pr-3">
+              <a class="alt" href="#sobre">SOBRE</a>
+            </li>
+            <li class="nav-item pr-3">
+              <a class="alt" href="#feed">FEEDBACK</a>
+            </li>
         </ul>
       </div>
     </div>
   </nav>
   </div>
-  <section class="page-section-top portfolio" id="portfolio">
-    <div id="container">
+  <section class="page-section portfolio" id="portfolio">
+    <div id="container1">
         <div id="home">
-            <h3>HOME</h3>
+            <h3 class="home1">HOME</h3>
             <div class="divider-custom">
               <div class="divider-custom-line"></div>
               <div class="divider-custom-icon">
@@ -68,6 +67,7 @@ Te Ajuda
               </div>
               <div class="divider-custom-line"></div>
             </div>
+            <div class="pagina">
             <h2><b>O que é autoajuda?</b></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda 
             ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, 
@@ -77,6 +77,7 @@ Te Ajuda
             consequuntur itaque. Nam.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia 
             neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit 
             asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+          </div>
           </div>
 
       <div id="conteudo">
@@ -124,7 +125,7 @@ Te Ajuda
             <div class="card"> 
               <div id="efeito"> <img class="card-img-top" src="portfolio/crises.png"></div>
                 <div class="card-body">
-                  <h6><b>CRISES</b></h6>
+                  <h6><b>TRANSTORNOS</b></h6>
                 </div>
             </div>
           </div>
@@ -166,7 +167,7 @@ Te Ajuda
       </div>
 
       <div id="sobre">
-        <h3>SOBRE</h3>
+          <h3 id="sob1">SOBRE</h3>
         <div class="divider-custom">
           <div class="divider-custom-line"></div>
           <div class="divider-custom-icon">
@@ -174,15 +175,17 @@ Te Ajuda
           </div>
           <div class="divider-custom-line"></div>
         </div>
+        <div class="pagina">
         Durante o desenvolvimento de um website, existem diversos fatores que interferem diretamente na qualidade do mesmo, 
         e em como o usuário receberá as informações do conteúdo. Uma das coisas mais importantes para a criação de um layout é a escolha certa das cores a utilizar.
         Por esta razão, ter à mão ferramentas que facilitem no processo como uma tabela de cores HTML  é essencial.
+      </div>
       </div>
         <!--Programação card flip 3d-->
       <div class="container-2 mb-5">
         <div class="card2 middle">
          <div class="front">
-           <img class="img-card2" src="img/maos.png">
+           <img class="img-card2" src="img/flip.png">
          </div>
          <div class="back">
            <div class="back-content middle">
@@ -197,27 +200,27 @@ Te Ajuda
          </div>
        </div>
      </div>
-     
-     <div id="feed">
-      <section class="content">
-        <div class="contato">
-          <H3>FEEDBACK</H3>
-          <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="divider-custom-line"></div>
+  </div>
+  <!--Programação do feedback-->
+  <div id="feed">
+    <section class="content">
+      <div class="contato">
+        <H3>FEEDBACK</H3>
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-star"></i>
           </div>
-          <form class="feedback justify-content-center" method="POST" action="./feedback.php">
-            <input class="field" name="Nome" placeholder="Nome">
-            <input class="field" name="Email" placeholder="Email">
-            <textarea name="Mensagem" class="field" placeholder="Deixe seu comentário aqui."></textarea>
-            <input class="field"type="submit" value="Enviar">
-          </form>   
+          <div class="divider-custom-line"></div>
         </div>
-      </section>
-    </div>
+        <form class="feedback " method="POST" action="./feedback.php">
+          <input class="field" name="Nome" placeholder="Nome">
+          <input class="field" name="Email" placeholder="Email">
+          <textarea name="Mensagem" class="field" placeholder="Deixe seu comentário aqui."></textarea>
+          <input class="field btn-primary"type="submit" value="Enviar">
+        </form>   
+      </div>
+    </section>
   </div>
 </section>
 
@@ -233,7 +236,7 @@ Te Ajuda
             <div class="modal-body text-center">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8">
+                        <div class="col-lg-6">
                             <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-secondary mb-0">ANSIEDADE</h2>
                             <!-- Icon Divider-->
@@ -243,8 +246,248 @@ Te Ajuda
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="portfolio/ansiedade.png" alt="ANSIEDADE"/>
+                        </div>
+                        <div class="col-lg-8">
                             <!-- Portfolio Modal - Text-->
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <div id="pagina">
+                              <h2>O que é de fato ansiedade?</h2><br>
+                            <p class="mb-1">Sabe aquele friozinho na barriga que dá na hora de encontrar alguém que te atraí? Ou o medo de tirar nota baixa antes de uma 
+                              prova? Sim, você se sentiu ansiosa(o) e esse é um sentimento que muitos já experimentaram, ou as vezes ou constantemente, e é a segunda opção que trás preocupações.</p> 
+                            <P class="mb-1">Sentindo-a o tempo todo, ela passa então, a ser uma rotina. E, quando isso acontece, 
+                              ela deixa de ser uma sensação normal e passa a ser um transtorno -ou o que chamamos de ansiedade patológica.</P> 
+                            <P class="mb-1">Ela pode se tornar uma patologia de diversas formas: personalidade; transtorno de ansiedade generalizada; transtornos mentais; 
+                              transtorno alimentar; transtorno de pânico; transtorno obsessivo compulsivo, dentre outros.</P>
+                            <P class="mb-1">Geralmente os sintomas físicos da ansiedade são os que mais assustam e que despertam a atenção da pessoa para buscar por tratamento.
+                               Mas a ansiedade afeta nosso corpo, mente e desempenho de formas diferentes:</P> 
+                            <ul class="mb-1">
+                              <li><b>Sintomas emocionais:</b> tristeza, nervosismo, irritabilidade;</li>
+                              <li><b>Sintomas fisiológicos:</b> coração acelerado, sensação de formigamento, falta de ar, sudorese, tontura, dor de cabeça, 
+                                dores musculares, insônia;</li>
+                              <li><b>Sintomas comportamentais:</b> impulsividade, agressividade, fala acelerada;</li>
+                              <li><b>Sintomas cognitivos:</b> dificuldade de concentração e tomada de decisão, preocupações excessivas</li>
+                            </ul>
+                            <p>Um sentimento pertinente que faz parte da crise de ansiedade é a preocupação, que torna o fluxo de pensamentos maior e o conteúdo desses pensamentos é negativo. 
+                              Por isso, em qualquer sinal de sintoma constante, bisa ajuda profissional. 
+                              Controlar no começo, evita muito no futuro. Se você tem há tempos, calma, tudo tem um jeito, vem com a gente!</p>
+                            <h2>Quais são os motivos que a desencadeia?</h2><br>
+                            <p class="mb-1">Não se sabe exatamente porque uma pessoa pode ter mais predisposição a uma crise de ansiedade do que outra. 
+                              Muitos fatores podem estar envolvidos, inclusive, de forma combinada. Os principais:</p>
+                            <li><b>GENÉTICA</b></li>
+                            <p>A propensão a ter ansiedade pode estar marcada no nosso DNA. Isso acontece se existir um histórico familiar de transtornos de ansiedade, 
+                              e se houver não quer dizer obrigatoriamente que você tem ou terá, lembre-se: as chances são 50-50. Caso desenvolva, não há como retirar os 
+                              nossos genes, o que se pode fazer é buscar orientação médica, para um tratamento adequado. Orientação psicológica para enfrentar os quadros 
+                              de ansiedade de maneira mais branda. <i>Ajuda é necessária e bem-vinda!</i></p>
+                            <li><b>EVENTO TRAUMÁTICO</b></li>
+                            <p>A ansiedade pode estar nos nossos genes assim como pode surgir inesperadamente. Um acidente grave de trânsito, um assalto, um terremoto 
+                              ou algum acontecimento que impacte na estrutura psicológica da pessoa pode desencadear um quadro desse problema. <i>Valendo pontuar que nem 
+                              tudo que é traumático para um é para outro, cada ser humano lida com os fatos de maneira diferente, é importante respeitar.</i>
+                              O tratamento para esse tipo de ansiedade pode ser via medicamentos - <b>somente</b> com indicação médica-, mas também é altamente recomendável 
+                              uma ajuda psicológica para tentar ressignificar e superar o trauma. <i>Mais uma vez, ajuda é necessária e bem-vinda, busque!</i></p>
+                            <li><b>SITUAÇÕES ESTRESSANTES GERADAS POR EXPECTATIVAS</b></li>
+                            <p>Sabe o quê o primeiro dia de trabalho, o casamento e aqueles problemas financeiros têm em comum? Possivelmente a ansiedade. 
+                              Essas situações que geram bastante expectativa ou previsões ruins podem mudam o nosso quadro emocional normal e fazer com que tenhamos 
+                              crises dessa emoção. Uma das formas de tratamento é se preparar para ocasiões previsíveis. Buscando uma ajuda psicológica você pode, 
+                              por exemplo, se organizar mentalmente para uma entrevista de emprego.</p>
+                            <li><b>DOENÇAS FÍSICAS</b></li>
+                            <p>Algumas doenças que atingem o nosso corpo podem interferir na nossa mente, gerando a ansiedade -como problemas cardiovasculares 
+                              (arritmias cardíacas) e doenças hormonais (hipertireoidismo ou hiperadrenocorticismo). Essas doenças, quando não tratadas, liberam 
+                              substâncias  em todo organismo provocando uma instabilidade emocional, o que é favorável ao desenvolvimento da ansiedade. 
+                              A procura por um médico especialista para cada uma dessas doenças pode permitir o melhor tratamento e diminuir as chances de desenvolver 
+                              o quadro.</p>
+                            <li><b>DISTÚRBIOS HORMONAIS</b></li>
+                            <p>As mulheres, de modo geral, possuem maior inclinação às crises de ansiedade, pois estão mais sujeitas a oscilações hormonais, 
+                              principalmente no período menstrual. Esse é um fator que pode justificar, inclusive, a ocorrência de crises em gestantes 
+                              (os sintomas costumam cessar após o parto). O excesso de hormônios também pode ser motivo para a ansiedade em homens e mulheres que
+                              utilizam esteroides anabolizantes. Esse é um dos efeitos colaterais mais conhecidos dessa prática, que pode, ainda, provocar problemas 
+                              cardíacos e neurológicos. A beleza procurada e a saúde devem andar de mãos dadas. Cuidado, sempre! Maneire, sempre!</p>
+                            <li><b>TRAUMAS DE INFÂNCIA</b></li>
+                            <p>Muitas vezes, o que causa ansiedade são problemas que ocorreram durante a infância e geraram algum trauma permanente. 
+                              Isso depende muito do fato, do quanto ele afetou a pessoa e da conjunção de outros fatores, como a genética. Assim, é fundamental 
+                              que o indivíduo busque tratar esse choque. Na aba "depressão", tratamos o quanto o diálogo é importante, ser acolhido e ajudado por 
+                              quem amamos, colabora para que continuemos em frente.</p>
+                            <li><b>ABUSO DE SUBSTÂNCIAS</b></li>
+                            <p>Da mesma forma que uma pessoa que faz uso recorrente de substâncias, como álcool e cigarro deve buscar tratamento, quem faz de 
+                              medicamentos e drogas ilícitas também deve. O remédio é recomendado enquanto medidas saudáveis, o uso incorreto e exagerado pode 
+                              se dar por ansiedade e/ou acarretar a mesma. Essas substâncias agem diretamente no sistema nervoso, alterando a forma como a pessoa 
+                              lida com as situações.</p>
+                            <h2>Quais são os recursos para controle imediato?</h2><br>
+                            <p class="mb-1">A ansiedade se manifesta de forma mais ou menos intensa em dados momentos. Assim, o ideal é que o controle seja contínuo para evitar 
+                              às crises. A especialista Luciana Mancini recomenda, por exemplo, a prática de atividades físicas, meditação e ioga. Você pode saber 
+                              mais e acompanhar entrando no card "Entretenimento" e clicando no ícone de "Meditação". Acesse para conhecer e também praticar. 
+                              Relaxa e vem com a gente!</p>
+                            <p class="mb-1">Quando a crise se manifesta é preciso agir de imediato a fim de recuperar o equilíbrio. A seguir, você confere algumas técnicas 
+                              eficazes para esses momentos de pico:</p>
+                            <ul><li><b>Diminuir o ritmo da respiração</b>
+                            <p>Durante a crise é comum a respiração ficar descontrolada. A pessoa pode respirar muito rápido, trazendo sensação de cansaço, 
+                              sufocamento e, até mesmo, alteração nos batimentos cardíacos. Portando, primeiro, reduza o ritmo da respiração
+                              Foque na inspiração e expiração, sempre enchendo completamente os pulmões para oxigenar o organismo. Respire com calma, com a gente!</p></li>
+                              
+                              *Gif* 
+                            <p><i>Inspire quando a forma aumentar e expire quando ela diminuir</i></p>
+                              
+                            <p class="mb-1">Outras três opções:</p>
+                            <p class="mb-1">1.	Coloque a mão no abdômen e foque no movimento de inspiração e expiração, com calma e profundidade;</p>
+                            <p class="mb-1">2.	Inspire pelo nariz contando até quatro (4), segure o ar, expire pela boca contando até quatro (4). Depois de esvaziar o pulmão, 
+                              conte até quatro (4) novamente para inspirar de novo.</p>
+                            <p>3.	Inspire pelo nariz contando até quatro e expire pela boca lentamente contando até oito. Repita até se sentir calmo.</p>
+                              
+                            <li class="mb-1"><b>Relaxar os músculos</b>
+                            <p>Uma crise de ansiedade provoca tensão extrema, e uma reação de defesa do organismo é manter a musculatura tensionada. Com isso surgem 
+                              desconfortos, dificuldade para respirar e dor de cabeça ou pela corpo.
+                              Preste atenção em si mesmo e perceba se você não está, por exemplo, contraindo os ombros ou as costas. Nem sempre há uma alteração na postura, 
+                              mas os músculos se mantêm rígidos, então, procure soltar o seu corpo e relaxa. <i>Se alongar e respirar bem, fará o oxigênio "passear" e os músculos 
+                              relaxarem.</i></li></p>
+                              
+                            <li class="mb-1"><b>Distrair a mente</b>
+                            <p>Não há como controlar uma crise de ansiedade mantendo o foco naquilo que a desencadeou. O ideal é voltar a atenção para algo totalmente diferente, 
+                              sem nenhuma relação com o que está incomodado.
+                              Uma dica sugerida pela médica é "participar de algum jogo, alguma coisa que concentra a mente em algo além do motivo da sua ansiedade". 
+                              Você pode assistir a um filme, ouvir música, preparar biscoitos ou um bolo, brincar com um aplicativo ou conversar nas redes sociais. <i>Sabemos que 
+                              não dá para simplesmente fingir que nada está acontecendo ou te preocupando. Você não precisa tirar imediatamente o foco, porque não irá adiantar, né? 
+                              Vamos por partes! Identifique, análise, se necessário saia do ambiente. Vá respirar e encaixar a mente em outro lugar e só então, por ter espaço, ocupe como 
+                              outras coisas.</i></li></p>
+                              
+                            <li class="mb-1"><b>Usar a imaginação guiada</b>
+                            <p>xJá entendemos que a ansiedade é um estado de tensão e nervosismo, para controlar uma crise você pode recorrer à imaginação guiada. Feche os olhos e 
+                              projete sua mente para fora de onde está, em direção a um lugar que representa paz e tranquilidade. <i>Enriqueça com detalhes e procure aproveitar essa 
+                              imagem mental. Nem sempre estaremos em um lugar onde será possível sair, trabalhe e eduque a mente para conseguir fugir de qualquer lugar em qualquer 
+                              pico de estresse e crise.</i></li></p>
+                            </ul>
+                            <h2>Quais são as variações da ansiedade?</h2><br>
+                            <li><b>TRANSTORNO DE ANSIEDADE GENERALIZADA (TAG)</b></li>
+                            <p class="mb-1">O Transtorno de Ansiedade Generalizada (TAG) é um transtorno psiquiátrico caracterizado por um constante sentimento de preocupação e 
+                              medo que interfere na vida diária. Pessoas com esse transtorno podem experimentar sentimentos de pavor, angústia ou agitação por nenhuma 
+                              razão discernível -psiquiatras referem-se a essa ansiedade inexplicável, sem desencadeantes, como "ansiedade flutuante livre".</p>
+                            <p class="mb-1">Aqueles com TAG podem esperar constantemente o pior, e se preocupar com coisas como trabalho, dinheiro, família e amigos, ou com a 
+                              saúde, mesmo quando não há motivos reais para se preocupar. A ansiedade sentida com esse distúrbio pode ocorrer por uma razão específica 
+                              ou ser desencadeada por um evento e pode ser desproporcionalmente grande ou irrealista para a situação.</p>
+                            <p>Embora muitas pessoas com TAG percebam que sua preocupação é irreal ou injustificada, os sentimentos de ansiedade persistem e parecem 
+                              incontroláveis. Alguns dos aflitos ainda podem levar uma vida normal com empregos produtivos e vidas sociais ativas, mas estão 
+                              constantemente lutando internamente com preocupação e angústia. <i>Todos nós lutamos diariamente com nós mesmos e precisamos de ajuda para 
+                              lidar com tudo que se passa. Calma...tem sempre um jeitinho, vem com a gente!</i></p>
+                            <p class="mb-1">O TAG é acompanhada por três ou mais dos seguintes sintomas:</p>
+                            <ul>
+                              <li>Preocupações e medos excessivos;</li>
+                              <li>Visão irreal de problemas;</li>
+                              <li>Inquietação ou sensação de estar sempre "nervoso";</li>
+                              <li>Irritabilidade;</li>
+                              <li>Tensão muscular;</li>
+                              <li>Dores de cabeça;</li>
+                              <li>Sudorese;</li>
+                              <li>Dificuldade em manter a concentração;</li>
+                              <li>Náuseas ou queimação no estômago;</li>
+                              <li>Náuseas ou queimação no estômago;</li>
+                              <li>Fadiga e sensação de cansaço constante;</li>
+                              <li>Dificuldade para dormir ou manter-se acordado;</li>
+                              <li>Surgimento de tremores e espasmos;</li>
+                              <li>Ficar facilmente assustado;</li>
+                            </ul>
+                            <p class="mb-1">O transtorno de ansiedade generalizada é o transtorno de ansiedade mais comum que afeta adultos mais velhos.</p>
+                            <p>Em qualquer nível ou intensidade da TAG se faz necessário o acompanhamento clínico multidisciplinar: psiquiatra e psicólogo.</p>
+                            <li><b>SÍNDROME DO PÂNICO</b></li>
+                            <p class="mb-1">Com o transtorno do pânico uma pessoa tem Breves ataques de intenso terror e apreensão, muitas vezes marcados por tremores, 
+                              confusão, tontura, náuseas e dificuldade para respirar. Esses ataques de pânico são definidos como medo ou desconforto, que surgem 
+                              abruptamente em menos de 10 minutos e podem durar várias horas.</p>
+                            <p class="mb-1">Os ataques podem ser desencadeadas por estresse, pensamentos irracionais, medo geral o medo do desconhecido. É comum a pessoa 
+                              diagnosticada com síndrome de pânico sempre evitar locais que despertem o sentimento de medo que podem ser locais muito tumultuados, 
+                              academias, em ambientes escolares ou algum lugar que seja marcante na sua memória afetiva.</p>
+                            <p class="mb-1">No entanto, por vezes, o gatilho não é claro e os ataques podem surgir sem aviso prévio. Para ajudar a evitar um ataque, é possível 
+                              evitar o gatilho ou até mesmo com ajuda profissional, trabalhar o gatilho para que ele deixe de ser, assim como com traumas.</p>
+                            <p class="mb-1">Além de ataques de pânico inesperados e recorrentes, um diagnóstico de transtorno de pânico requer que tais ataques tenham consequências 
+                              crônicas: preocupação com as possíveis implicações dos ataques, medo persistente de ataques futuros ou mudanças significativas no 
+                              comportamento relacionado aos ataques. Como tal aqueles que sofrem de transtorno de pânico apresentam sintomas mesmo fora de episódio 
+                              de pânico.</p>
+                            <p>Em alguns casos, uma consciência aumentada, chamada de hipervigilância do funcionamento do corpo, ocorre durante os ataques de pânico, 
+                              em que qualquer alteração fisiológica percebida é interpretada como uma possível doença com risco de vida, também conhecida como a 
+                              hipocondria extrema. <i>O tratamento é a ajuda profissional!</i></p>
+                            <li><b>AGORAFOBIA</b></li>
+                            <p class="mb-1">Agorafobia é a ansiedade específica sobre estar em um lugar ou situação onde a fuga é difícil ou embaraçosa ou onde a ajuda pode estar 
+                              indisponível. Agorafobia está fortemente ligada ao transtorno do pânico e é muitas vezes precipitada pelo menos de ter um ataque de pânico. 
+                              Uma manifestação comum envolve a necessidade de estar em visão constante de uma porta ou outra rota de fuga.</p>
+                            <p class="mb-1">A agorafobia tem características marcantes que ajudam no diagnóstico, como o medo de usar transporte público, estar em espaços abertos e fechados, 
+                              ficar sozinho em uma multidão e até de estar fora de casa sozinho.</p>
+                            <p class="mb-1">Além dos próprios medos, o termo agorafobia é frequentemente usado para se referir aos comportamentos de evitação que os sofredores, geralmente, 
+                              desenvolvem.</p>
+                            <p class="mb-1">O medo é desproporcional em relação à situação real. Se não tratada pode se tornar grave ao ponto de uma pessoa ser incapaz até de sair 
+                              de casa. Uma pessoa só pode ser diagnosticada com agorafobia se o medo for intensamente perturbador ou se interferir significativamente 
+                              nas atividades diárias normais.</p>
+                            <p>É por isso que esse tipo de ansiedade requer bastante observação e apoio familiar, visto em conta que ela prejudica o indivíduo de 
+                              realizar atividades comuns do cotidiano como trabalhar e estudar, ou seja interfere na qualidade de vida como um todo. E apoio familiar, 
+                              não é somente família de sangue. <i>Reforçando novamente o quão importante é a ajuda e conversa de quem amamos.</i></p>
+                            <li><b>TRANSTORNO OBSESSIVO COMPULSIVO (TOC)</b></li>
+                            <p class="mb-1">O Transtorno Obsessivo Compulsivo se enquadra nas variações de ansiedade por ser um distúrbio psiquiátrico. É uma condição em que a 
+                              pessoa tem obsessões ou compulsões, que não são causados por drogas ou ordem física e que causam sofrimento ou disfunção social.</p>
+                            <p class="mb-1">Os rituais compulsivos são regras pessoais seguidas para aliviar a ansiedade que podem incluir pensamentos, impulsivos, imagens, 
+                              memórias e atos repetitivos e padronizados, como por exemplo, ações de checagem de situações ou atividades concluídas com êxito, 
+                              limpeza extrema de partes do corpo ou objetos, além de ações que envolvam contagem, verificação, precisão e armazenamento.</p>
+                            <p class="mb-1">Pesquisas mostram que o TOC afeta mais adultos, dentre eles as mulheres, em relação a crianças e adolescentes. Um pessoa com TOC sabe 
+                              que os sintomas são irracionais e, por isso, tenta constantemente lutar contra os pensamentos e esse tipo de comportamento 
+                              <i>(a luta constante contra os pensamentos pode levar a obsessão por parar de pensar, a ajuda profissional para organizar e controlar é o 
+                              indicado. SEMPRE!).</i></p>
+                            <p class="mb-1">Seus sintomas podem estar relacionados a eventos externos que eles temem (como a cozinha em chamas porque se esqueceram de desligar 
+                              o gás do fogão ou o arrombamento da casa porque se esqueceram de trancar a casa ou a se preocupar que eles se comportaram de maneira 
+                              inadequada. Fatores comportamentais, cognitivos, genéticos e neurobiológicos podem estar envolvidos.</p>
+                            <p>Apenas de crônico, é possível superar o TOC e ter os sintomas reduzidos com o tempo.</p>
+                            <li><b>TRANSTORNO DISMÓRFICO CORPORAL (TDC)</b></li>
+                            <p class="mb-1">O Transtorno Dismórfico Corporal (TDC), conhecido também como dismorfofobia, é um transtorno mental caracterizado pela ideia obsessiva, 
+                              como controle limitado do indivíduo, de que algum aspecto da própria aparência é gravemente defeituoso e merecem medidas severas para 
+                              escondê-lo ou corrigi-lo.</p> 
+                            <p class="mb-1">Na maioria das vezes, a "falha" percebida é imaginada e qualquer tentativa de explicação sobre a falsa impressão é nula. Os pensamentos 
+                              a respeito são confusos, intrusivos e compulsivos, ocupando várias horas por dia do indivíduo.</p>
+                            <p>As áreas comuns de "imperfeições" (lembrando que são normais e todos nós possuímos "imperfeições") percebidas envolvem a pele (acne, 
+                              oleosidade, rugas), face (excesso de pelos faciais), nariz, boca, dentes, calvície, seios ou genitais.</p>
+                            <p class="mb-1">Os principais sintomas são:</p>
+                            <ul>
+                              <li>Preocupações e medos excessivos;</li>
+                              <li>Visão irreal de problemas;</li>
+                              <li>Irritabilidade;</li>
+                              <li>Tensão muscular;</li>
+                              <li>Dores de cabeça;</li>
+                              <li>Sudorese;</li>
+                              <li>Dificuldade em manter a concentração;</li>
+                              <li>Náuseas ou queimação no estômago;</li>
+                              <li>Necessidade de ir ao banheiro com frequência;</li>
+                              <li>Fadiga e sensação de cansaço constante;</li>
+                              <li>Dificuldade para dormir ou manter-se acordado;</li>
+                              <li>Surgimento de tremores e espasmos;</li>
+                              <li>Ficar facilmente assustado;</li>
+                            </ul>
+                            <p>As pesquisas em relação ao TDC são bem limitadas. No entanto, a medicação antidepressiva e a terapia cognitivo-comportamental (TCC) são consideradas 
+                              formas de tratamentos eficazes. <i>É hora de repetir, tudo tem jeito, vem com a gente!</i></p>
+                            <li><b>TRANSTORNOS DE ESTRESSE PÓS-TRAUMATICO (TEPT)</b></li>
+                            <p class="mb-1">O Transtorno de Estresse Pós-traumático (TEPT) é um transtorno mental que pode se desenvolver depois que uma pessoa ou terceiros 
+                              são expostos a um evento traumático, como casos de violência e agressão, guerra, terrorismo, tortura, acidentes de trânsito, catástrofes 
+                              naturais ou qualquer outro fato que represente ameaça à vida.</p>
+                            <p class="mb-1">Os sintomas desse tipo de distúrbio podem se manifestar em qualquer faixa de idade e levar meses ou anos para surgirem.</p>
+                            <p class="mb-1">Trata-se de um conjunto de sinais e sintomas físicos, psíquicos e emocionais que inclui pensamentos e lembranças perturbadoras, 
+                              sentimentos ou sonhos relacionados ao evento; sofrimento mental ou físico a sinais relacionados ao trauma; tentativas de evitar sinais, 
+                              contatos e atividades que se relacionem ao trauma, causando isolamento social; alterações na maneira como uma pessoa pensa e sente, além 
+                              de sintomas como taquicardia, sudorese, tonturas, dor de cabeça, distúrbios do sono, dificuldade de concentração, irritabilidade, 
+                              hipervigilância.</p>
+                            <P class="mb-1">Os  indivíduos com TEPT quando se recordam do fato traumático, revivem o episódio, como se estivessem ocorrendo naquele momento e com a 
+                              mesma sensação de dor e sofrimento que o agente estressor provocou.</P>
+                            <P class="mb-1">Essa recordação, conhecida como revivescência, desencadeia alterações neurofisiológicas e mentais.</P>
+                            <P>O tratamento para a TEPT, a terapia cognitiva comportamental é essencial, quando necessários, a indicação de medicamentos ansiolíticos 
+                              por psiquiatras, além do acompanhamento e apoio da família e amigos.</P>
+                            <p><i>Estes citados acima são os mais comuns, porém existem muitos outros transtornos de ansiedade, como Transtorno Afetivo Bipolar, 
+                              Tricotilomania, Ansiedade Induzida, Ansiedade Social, Acumulação etc.</i></p>
+                            <h2> Ajuda médica é necessária?</h2><br>
+                            <p>Conhecer e reconhecer em si mesmo os sintomas de ansiedade é muito importante para buscar ajuda, com o objetivo de que a situação seja 
+                              controlada o mais breve possível. Por isso em muitos casos, a autodiagnóstico é o primeiro passo. Mas, os cuidados não devem parar por 
+                              aí! Também é necessária a busca por um profissional especializado. Assim como reforçamos a todo tempo! Abra o coração, precisamos um dos 
+                              outros, ainda mais se o outro for especialista no que você quer melhorar!</p>
+                            <li><b>PROCURE AJUDA DE PESSOAS PRÓXIMAS</b></li>
+                            <p>Algumas pesquisas mostram que pessoas que tem amigos próximos e solitários tem maior capacidade de combater doenças mentais e físicas do 
+                              que pessoas reclusas. A mente pode ser o nosso pior inimigo quando estamos ansiosos e ter uma rede de apoio que você pode conversar sobre 
+                              suas preocupações mais profundas e desabafar evita que a ansiedade consuma sua vida. </p>
+                            <p><i>Encontre amigos confiáveis com os quais você possa se abrir e...seja também o bom amigo, tenha uma palavra boa ou um abraço apertado, mas dê o que você quer receber.  Faça o bem e ele retornará 
+                              direto para você. As coisas irão melhorar. Energias boas vão e vem!</i></p>
+                            <p><i><b>Encontrar a estratégia certa que funcione para você controlar sua ansiedade é importante!!</b></i></p>
+                              
+                              
+
+                            
+                            </div>  
                             <button class="btn2 btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Fechar</button>
                         </div>
                     </div>
@@ -264,7 +507,7 @@ Te Ajuda
           <div class="modal-body text-center">
               <div class="container">
                   <div class="row justify-content-center">
-                      <div class="col-lg-8">
+                      <div class="col-lg-6">
                           <!-- Portfolio Modal - Title-->
                           <h2 class="portfolio-modal-title text-secondary mb-0">DEPRESSÃO</h2>
                           <!-- Icon Divider-->
@@ -274,6 +517,8 @@ Te Ajuda
                               <div class="divider-custom-line"></div>
                           </div>
                           <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="portfolio/depressão.png" alt="DEPRESSÃO"/>
+                      </div>
+                      <div class="col-lg-8">    
                           <!-- Portfolio Modal - Text-->
                           <div id="pagina">
                             <h2><b>O que pode ser classificado como depressão?</b></h2>
@@ -388,7 +633,11 @@ Te Ajuda
                               <p>Os neurônios precisam de neurotransmissores para se comunicar. Por isso que, no tratamento, procura-se aumentar os neurotransmissores certos para conseguir ajustar a função desses neurônios”.</p>
                               <p>E porque eles ficam desregulados, causando a depressão? O neurologista explica que essas causas não são uma e nem compreendidas ao todo. Podem ser genéticas, ambientais, eventuais, traumas etc.</p>
                               <p>Entender que a depressão é uma doença e buscar a causa específica do seu caso junto com ajuda/tratamento médico, colocará no eixo toda comunicação do cérebro.</p>
-                          </div>
+                              <p><i>¹neurotransmissor que atua no cérebro, estabelecendo comunicação entre as células nervosas, 
+                                podendo também ser encontrada no sistema digestivo e nas plaquetas do sangue.</i></p>
+                              <p><i>²monoaminas (substância bioquímica) que mais influencia o humor, ansiedade, sono e alimentação</i></p>
+                            </div>
+                            <img src="../TEAJUDA/img/foto-C_P.png"><br>
                           <button class="btn2 btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Fechar</button>
                       </div>
                   </div>
@@ -408,16 +657,18 @@ Te Ajuda
           <div class="modal-body text-center">
               <div class="container">
                   <div class="row justify-content-center">
-                      <div class="col-lg-8">
+                      <div class="col-lg-6">
                           <!-- Portfolio Modal - Title-->
-                          <h2 class="portfolio-modal-title text-secondary mb-0">CRISES</h2>
+                          <h2 class="portfolio-modal-title text-secondary mb-0">TRANSTORNOS</h2>
                           <!-- Icon Divider-->
                           <div class="divider-custom">
                               <div class="divider-custom-line"></div>
                               <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                               <div class="divider-custom-line"></div>
                           </div>
-                          <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="portfolio/crises.png" alt="CRISES"/>
+                          <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="portfolio/crises.png" alt="TRANSTORNOS"/>
+                      </div>
+                      <div class="col-lg-8">
                           <!-- Portfolio Modal - Text-->
                           <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                           <button class="btn2 btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Fechar</button>
@@ -439,7 +690,7 @@ Te Ajuda
           <div class="modal-body text-center">
               <div class="container">
                   <div class="row justify-content-center">
-                      <div class="col-lg-8">
+                      <div class="col-lg-6">
                           <!-- Portfolio Modal - Title-->
                           <h2 class="portfolio-modal-title text-secondary mb-0">RELATOS</h2>
                           <!-- Icon Divider-->
@@ -448,9 +699,42 @@ Te Ajuda
                               <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                               <div class="divider-custom-line"></div>
                           </div>
-                          <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="portfolio/relatos.png" alt="RELATOS"/>
-                          <!-- Portfolio Modal - Text-->
-                          <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                          
+                          <!-- Portfolio Modal - Image-->
+                          <img class="img-fluid rounded mb-5" src="portfolio/entretenimentos.png" alt="ENTRETENIMENTOS"/>
+                      </div>
+                      <div class="carrosel col-lg-8">    
+                           <!-- Portfolio Modal - Text-->
+                           <p class="mb-3">Falar de seus próprios sentimentos é um passo grande e complicado para a maioria das pessoas. Nunca foi fácil expor o que já passamos ou estamos passando, mas no intuito de ajudar, um grupo de pessoas nos contou sua história e trajetória.
+                            A experiência de ter consigo transtornos e o que as ajudou a melhorar.</p>
+                            <p>Esperamos que ajude de alguma forma!</p>
+                            <p><i>Obs: Algumas pessoas não se sentiram a vontade de mostrar os seus rostos, escreveram e com a autorização delas, 
+                              nós contamos em áudio.</i></p>
+                          <!--carrosel-->
+                          <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active display-block">
+                              <embed src="videos-TCC/Gabi.mp4" autostart="false" height="500" width="550" />
+                              <P>Gabriela Alves</P>
+                            </div>
+                            <div class="carousel-item">
+                              <embed src="videos-TCC/Elaine.mp4" autostart="false" height="500" width="550" /> 
+                              <p>Elaine - 41 anos</p>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="..." class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                         
                           <button class="btn2 btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Fechar</button>
                       </div>
                   </div>
@@ -470,7 +754,7 @@ Te Ajuda
           <div class="modal-body text-center">
               <div class="container">
                   <div class="row justify-content-center">
-                      <div class="col-lg-8">
+                      <div class="col-lg-6">
                           <!-- Portfolio Modal - Title-->
                           <h2 class="portfolio-modal-title text-secondary mb-0">ENTRETENIMENTOS</h2>
                           <!-- Icon Divider-->
@@ -481,8 +765,44 @@ Te Ajuda
                           </div>
                           <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="portfolio/entretenimentos.png" alt="ENTRETENIMENTOS"/>
                           <!-- Portfolio Modal - Text-->
-                          <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                          <button class="btn2 btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Fechar</button>
+                      </div>
+                      <div class="col-lg-8">
+                      <div id="pagina">
+                          <p class="mb-1"> Durante qualquer tipo de desequilíbrio emocial e/ou transtorno psíquico, principalmente vivendo em isolamento social,
+                            é necessário que se ocupe a mente proveitosamente.</p>
+                          <p>Para tal, nós (integrantes do grupo) realizamos uma pesquisa vasta selecionando contéudos que variam entre livros e podcasts que movimentarão o seu cérebro.
+                             Enriquecidos de conhecimento, empatia e relaxamento, está á disposição de vocês, nosso aglomerado de afazeres (lendo, ouvindo, meditanto etc.). </p>
+                      </div>
+                    <div class="icones text-left">
+                      <div class="container-el mb-3">
+                        <a href="livro.html">
+                          <button class=" bnt3 bnt-link"><img src="../TEAJUDA/portfolio/icones/book.png"></button>
+                          <b><span class="bnt-black">&nbsp; LIVROS</span></b>
+                        </a>
+                      </div>
+
+                      <div class="container-ed mb-3">
+                        <a href="documentario.html">
+                          <button class=" bnt3 bnt-link"><img src="../TEAJUDA/portfolio/icones/documentario.png"></button>
+                          <b><span class="bnt-black">&nbsp; DOCUMENTÁRIO</span></b>
+                        </a>
+                      </div>
+
+                      <div class="container-ep mb-3">
+                        <a href="podcast.html">
+                          <button class=" bnt3 bnt-link"><img src="../TEAJUDA/portfolio/icones/podcast.png"></button>
+                          <b><span class="bnt-black">&nbsp; PODCAST</span></b>
+                        </a>
+                      </div>
+
+                      <div class="container-em mb-3">
+                        <a href="meditacao.html">
+                          <button class=" bnt3 bnt-link"><img src="../TEAJUDA/portfolio/icones/yoga.png"></button>
+                          <b><span class="bnt-black">&nbsp; MEDITAÇÃO</span></b>
+                        </a>
+                      </div>
+                    </div>
+                          <button class="btn2 btn-primary mb-3" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Fechar</button>
                       </div>
                   </div>
               </div>
@@ -501,7 +821,7 @@ Te Ajuda
           <div class="modal-body text-center">
               <div class="container">
                   <div class="row justify-content-center">
-                      <div class="col-lg-8">
+                      <div class="col-lg-6">
                           <!-- Portfolio Modal - Title-->
                           <h2 class="portfolio-modal-title text-secondary mb-0">ESPECIALISTA</h2>
                           <!-- Icon Divider-->
@@ -511,6 +831,8 @@ Te Ajuda
                               <div class="divider-custom-line"></div>
                           </div>
                           <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="portfolio/contatos.png" alt="CONTATOS"/>
+                      </div>
+                      <div class="col-lg-8">
                           <!-- Portfolio Modal - Text-->
                           <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                           <button class="btn2 btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Fechar</button>
@@ -522,7 +844,16 @@ Te Ajuda
   </div>
   </div>
 
-  
+  <!--programação do rodapé-->  
+  <section class="copyright py-4 text-center text-black">
+    <div class="container6">
+      <h5 class="mb-2">LOCALIZAÇÃO</h5>
+      <p class="pre-wrap lead mb-0"><i class="fas fa-home"></i><b>Etec Sylvio de Mattos Carvalho<br><i class="fas fa-map-marker-alt"></i> 644, R. Cesário Motta - Centro, Matão - SP</b></p>
+      <a class="btn-social mx-2 h4" href="https://www.facebook.com/etecsmc/"><i class="fab fa-fw fa-facebook-f"></i></a>
+      <a class="btn-social mx-4 h4" href="https://www.instagram.com/etecsylviodemattos "><i class="fab fa-fw fa-instagram"></i></a>
+      <small class="pre-wrap">TCC-2020</small>
+    </div>
+  </section>
   <!-- Footer -->
   
 

@@ -10,33 +10,37 @@ body
   transition: transform 1s;
   transform: translateX(0) scale(1);
   color: black;
+  cursor: pointer;
 }
 
 .alt:hover
 {
   transform: scale(1.3);
   color: black;
+  
 }
 
-
-.img-fluid{
-  max-width: 100%;
-  height: auto;
-}
 .banner
 {
   width:100%;
   height:27%;
   margin: 0 auto;
   display: block;
-  background-color:	#fdf5df;
+  background-color:	#f6eac2;
   
 }
 
-#container{
-  padding:20%;
-  text-align: center;
-  display: inline-block;
+#container1{
+  width:80%;
+  margin: 0 auto;
+  display: block;
+  font-size:16px;
+  line-height: 180%;
+  color: black;
+  text-align: justify;
+  padding-left:100px;
+  padding-right: 100px;
+  padding-top: 50px;
   
 }
 #conteudo{
@@ -48,12 +52,18 @@ body
 #pagina{
   text-align: justify;
   font-style: normal;
+  background-color: white;
 }
 h2{
   text-align: center;
 }
+.home1{
+  text-align:center;
+  font-style: oblique;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-#sobre{
+#sob1{
   text-align:center;
   font-style: oblique;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -152,7 +162,7 @@ h2{
 {
   max-height:none
 }
-.modal-content
+#modal-content
 {
   position:relative;
   display:flex;
@@ -298,7 +308,7 @@ button.close
 }
 
 .back{
-  background: #c5aded;
+  background: #f8d8d8;
   transform: perspective(600px) rotateY(180deg);
 
 }
@@ -345,4 +355,93 @@ a:link{
     color: #fff;
     outline: 0;
   }
+/*programação do rodapé*/
+.container6{
+  background: url(img/carejeirafundoazul.png) no-repeat center;
+}
+/* programação icones*/
+.bnt3{
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #a29bfe;
+  border-radius: 50px;
+  transition: all .5s;
+  
+}
+.bnt-link:hover{
+    outline: 0;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 8px 10px rgba(0,0,0,.5));
+}
+.bnt-link:active{
+  box-shadow:none;
+  position: relative;
+  top:5px;
+  border: none;
+}
+.bnt-black{
+  color: #000;
+}
+/* programação das paginas do entretenimento*/
+
+.masthead{
+  padding-top:1%;
+  padding-bottom:1rem
+}
+.masthead .masthead-heading{
+  font-size:2rem;
+  line-height:2rem
+}
+.masthead .masthead-subheading{
+  font-size:1rem
+}
+.masthead .masthead-avatar{
+  width:10rem;
+}
+
+.masthead{
+  padding-bottom:1rem;
+  background: #f6eac2;
+
+}
+.masthead .masthead-heading{
+  font-size:2rem;
+  line-height:2rem
+}
+.masthead-subheading{
+  font-size:1.5rem;
+}
+
+.body-livros{
+background: #ffe3dc;;
+
+}
+.banner-livros{
+  padding-left: 15%;
+  padding-right: 15%;
+  align-items: center;
+}
+
+.pagina-livro{
+  width:70%;
+  margin: 0 auto;
+  display: block;
+  background-color: white;
+  font-size:16px;
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  line-height: 180%;
+  color: black;
+  text-align: justify;
+  padding-left:100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+/*programação da seta da segunda pagina*/
+.seta{
+  width: ;
+ 
+}
+
 
